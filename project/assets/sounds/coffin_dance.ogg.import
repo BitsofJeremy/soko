@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/coffin_dance.ogg-19b8c7008237155c4a95ff73ef72330f.oggstr"
+
+[deps]
+
+source_file="res://assets/sounds/coffin_dance.ogg"
+dest_files=[ "res://.import/coffin_dance.ogg-19b8c7008237155c4a95ff73ef72330f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

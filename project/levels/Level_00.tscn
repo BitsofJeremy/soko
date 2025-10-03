@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://levels/Level.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/fonts/kenpixel.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://objects/Pickup.tscn" type="PackedScene" id=9]
+[ext_resource path="res://enemies/RedEnemy.tscn" type="PackedScene" id=10]
+[ext_resource path="res://enemies/RedTank1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://enemies/RedHelo.tscn" type="PackedScene" id=14]
+[ext_resource path="res://enemies/RedTank2.tscn" type="PackedScene" id=15]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Level_00" instance=ExtResource( 1 )]
+RedEnemy = ExtResource( 10 )
+RedTank1 = ExtResource( 12 )
+RedTank2 = ExtResource( 15 )
+RedHelo = ExtResource( 14 )
+Pickup = ExtResource( 9 )
+
+[node name="Obstacles" parent="." index="1"]
+tile_data = PoolIntArray( 131085, 0, 1, 131086, 0, 1, 131087, 0, 1, 196621, 0, 1, 196623, 0, 1, 262157, 0, 1, 262158, 9, 0, 262159, 0, 1 )
+
+[node name="Items" parent="." index="2"]
+tile_data = PoolIntArray( 65545, 2, 0, 196613, 5, 0, 196617, 0, 0, 196622, 4, 0, 327689, 1, 0 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="6"]
+
+[node name="Instructions" type="Label" parent="CanvasLayer" index="0"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -71.0
+margin_bottom = -20.0
+custom_fonts/font = SubResource( 1 )
+text = "Find the Key to open the lock to escape.
+Collect Hex along the way for points."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

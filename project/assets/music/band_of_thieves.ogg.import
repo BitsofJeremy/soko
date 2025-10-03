@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/band_of_thieves.ogg-41cda52b32a84e5e8cd75011ac780ac6.oggstr"
+
+[deps]
+
+source_file="res://assets/music/band_of_thieves.ogg"
+dest_files=[ "res://.import/band_of_thieves.ogg-41cda52b32a84e5e8cd75011ac780ac6.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
